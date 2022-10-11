@@ -16,6 +16,9 @@ export default {
         // F11拦截
         this.handleEvenetListener(true);
     },
+    beforeDestroy () {
+        this.setKeydownEventListener(false);
+    },
     methods: {
         /**
          * @name
