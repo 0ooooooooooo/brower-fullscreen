@@ -17,7 +17,7 @@ export default {
         this.handleEvenetListener(true);
     },
     beforeDestroy () {
-        this.setKeydownEventListener(false);
+        this.handleEvenetListener(false);
     },
     methods: {
         /**
